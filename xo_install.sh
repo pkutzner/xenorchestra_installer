@@ -32,6 +32,10 @@ sudo /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git 
 
 /usr/bin/git clone -b $xo_branch $xo_server
 /usr/bin/git clone -b $xo_branch $xo_web
+
+# Patch to allow config restore
+sed -i 's/< 5/> 0/g' /opt/xo-web/src/xo-app/settings/config/index.js
+
 cd $xo_server_dir
 /usr/bin/yarn 
 /usr/bin/yarn build
@@ -39,6 +43,7 @@ cd packages/xo-server
 sudo cp sample.config.yaml .xo-server.yaml
 sudo sed -i "s|#'/': '/path/to/xo-web/dist/'|'/': '/opt/xo-web/dist'|" .xo-server.yaml
 cd $xo_web_dir
+
 /usr/bin/yarn 
 /usr/bin/yarn build
 
