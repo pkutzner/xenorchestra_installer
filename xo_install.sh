@@ -31,7 +31,7 @@ sudo /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git 
 /usr/bin/git clone -b $xo_branch $xo_server
 
 # Patch to allow config restore
-sed -i 's/< 5/> 0/g' /opt/xen-orchestra/xo-web/dist/src/xo-app/settings/config/index.js
+sed -i 's/< 5/> 0/g' /opt/xen-orchestra/packages/xo-web/dist/src/xo-app/settings/config/index.js
 
 cd $xo_server_dir
 /usr/bin/yarn
