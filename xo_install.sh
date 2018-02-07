@@ -37,10 +37,6 @@ cd packages/xo-server
 
 sudo cp sample.config.yaml .xo-server.yaml
 sudo sed -i "s|#'/': '/path/to/xo-web/dist/'|'/': '/opt/xen-orchestra/packages/xo-web/dist'|" .xo-server.yaml
-cd $xo_web_dir
-
-/usr/bin/yarn 
-/usr/bin/yarn build
 
 if [[ ! -e $systemd_service_dir/$xo_service ]] ; then
 
