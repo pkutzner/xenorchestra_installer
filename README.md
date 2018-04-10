@@ -22,3 +22,7 @@ you need to run the below:
     git config --global user.name "Your Name"
     
 Provide your name and email address in the quoted sections, without quotes. 
+
+* Do not use LAMP
+* Optional to enable SSH access/highly recommended
+
