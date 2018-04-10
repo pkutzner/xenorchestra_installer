@@ -15,14 +15,6 @@ The default username and password are applied, admin@admin.net and admin for the
     
 If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
 
-If you ever get stuck on a specific revision of XO, or are receiving an alert saying "Please tell us who you are" from git
-you need to run the below:
-
-    git config --global user.email "you@example.com"
-    git config --global user.name "Your Name"
-    
-Provide your name and email address in the quoted sections, without quotes. 
-
 * Do not use LAMP
 * Optional to enable SSH access/highly recommended
 
