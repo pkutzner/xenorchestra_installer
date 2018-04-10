@@ -1,10 +1,10 @@
 If you are having issues before you make an issue please check the following. 
 
-# XO Website not loading
+# XOC Website not loading
 
        systemctl status xo-server.service
        
-# XO not updating or you're stuck on a specific version.     
+# XOC not updating or you're stuck on a specific version.     
        
 If you ever get stuck on a specific revision of XO, or are receiving an alert saying "Please tell us who you are" from git you need to run the below:
 
