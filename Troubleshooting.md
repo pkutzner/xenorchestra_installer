@@ -10,6 +10,8 @@ If you ever get stuck on a specific revision of XO, or are receiving an alert sa
 
        git config --global user.email "you@example.com"
        git config --global user.name "Your Name"
+      
+Provide your name and email address in the quoted sections, without quotes.
 
 #Checking the logs
 
