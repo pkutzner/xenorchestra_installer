@@ -1,6 +1,6 @@
-# Xen-Orchestra (Community) Installer
+# Xen-Orchestra (Community Edition) Installer
 
-Xen-Orchestra (Community) allows you to administer Citrix XenServer and XCP-NG as well as backup any VM's running on these systems. 
+Xen-Orchestra (Community Edition) allows you to administer Citrix XenServer and XCP-NG as well as backup any VM's running on these systems. 
 
 Confirm your VM's IP Address before starting the script so you know where to login to. 
 
@@ -17,4 +17,15 @@ If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
 
 * Do not use LAMP
 * Optional to enable SSH access/highly recommended
+
+# Goals/Backstory for this script
+
+I've often had questions similar to "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal is to be the CentOS of XOA. If XOA were RedHat the goal of XOCE would to be CentOS. 
+
+That isn't to say that this installation script won't work on other distributions, please contribute and help us to spread XOCE to other platforms. 
+
+Initially my goal was to simply setup and start using XOCE for a tiny production shop to be able to use an open source hypervisor (Citrix XenServer) and have a management tool/backup solution. Which was initially NAUBackup, when I found XO and that there was an open source management solution and backup solution that wasn't script based I jumped for it. 
+
+That goal transformed into the desire to assist the developers of XOA by using and hopefully finding any bugs or quirks that needed to be worked out. 
+
 
