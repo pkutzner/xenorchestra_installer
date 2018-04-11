@@ -20,7 +20,7 @@ If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
 
 # Goals/Backstory for this script
 
-I've often had questions similar to "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal is to be the CentOS of XOA. If XOA were RedHat the goal of XOCE would to be CentOS. 
+I've often have questions similar to "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal is to be the CentOS of XOA. If XOA were RedHat the goal of XOCE would to be CentOS. 
 
 That isn't to say that this installation script won't work on other distributions, please contribute and help us to spread XOCE to other platforms. 
 
