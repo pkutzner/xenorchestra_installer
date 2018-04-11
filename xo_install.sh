@@ -64,3 +64,8 @@ fi
 sudo /bin/chmod +x $systemd_service_dir/$xo_service
 sudo /bin/systemctl enable $xo_service
 sudo /bin/systemctl start $xo_service
+
+echo
+echo
+echo "Installation complete, open a browser to:"
+hostname -I
