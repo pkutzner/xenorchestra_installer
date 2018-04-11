@@ -67,5 +67,5 @@ sudo /bin/systemctl start $xo_service
 
 echo ""
 echo ""
-echo "Installation complete, open a browser to:"
-hostname -I
+echo "Installation complete, open a browser to:" && hostname -I && echo "Default Login:"admin@admin.net" Password:"admin"
+
