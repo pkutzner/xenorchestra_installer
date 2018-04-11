@@ -16,7 +16,6 @@ If you are having issues before you create an issue please check the following. 
 		  CPU: 2.209s
 	   CGroup: /system.slice/xo-server.service
 			   └─710 /usr/local/bin/node ./bin/xo-server
-
        
 # XOC not updating or you're stuck on a specific version.     
        
@@ -25,7 +24,7 @@ If you ever get stuck on a specific revision of XO, or are receiving an alert sa
        git config --global user.email "you@example.com"
        git config --global user.name "Your Name"
       
-Provide your name and email address in the quoted sections, without quotes.
+Provide your name and email address in the quoted sections, without quotes and once done try updating again. 
 
 # Checking the logs
 
