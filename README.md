@@ -26,6 +26,6 @@ That isn't to say that this installation script won't work on other distribution
 
 Initially my goal was to simply setup and start using XOCE for a tiny production shop to be able to use an open source hypervisor (Citrix XenServer) and have a management tool/backup solution. Which was initially NAUBackup, when I found XO and that there was an open source management solution and backup solution that wasn't script based I jumped for it. 
 
-That goal transformed into the desire to assist the developers of XOA by using and hopefully finding any bugs or quirks that needed to be worked out. 
+That goal transformed into the desire to assist the developers of XOA by using and hopefully finding any bugs or quirks that needed to be worked out while staying in line with the original goal of being as nearly compatibile as possible to XOA.
 
 
