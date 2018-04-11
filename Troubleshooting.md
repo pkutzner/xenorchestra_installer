@@ -1,4 +1,4 @@
-If you are having issues before you create an issue please check the following. (We'l be asking you to look at this information anyways)
+If you are having issues before you create an issue please check the following. (We'll be asking you to look at and provide this information anyways)
 
 # XOC Website not loading
 
