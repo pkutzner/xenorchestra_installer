@@ -1,6 +1,6 @@
 If you are having issues before you create an issue please check the following. (We'll be asking you to look at and provide this information anyways)
 
-# XOC Website not loading
+# XO Website not loading
 
        systemctl status xo-server.service
        
@@ -17,7 +17,7 @@ If you are having issues before you create an issue please check the following. 
 	   CGroup: /system.slice/xo-server.service
 			   └─710 /usr/local/bin/node ./bin/xo-server
        
-# XOC not updating or you're stuck on a specific version.     
+# XO not updating or you're stuck on a specific version.     
        
 If you ever get stuck on a specific revision of XO, or are receiving an alert saying "Please tell us who you are" from git you need to run the below:
 
