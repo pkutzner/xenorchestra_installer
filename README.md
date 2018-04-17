@@ -14,7 +14,7 @@ The default username and password are applied, admin@admin.net and admin for the
 If you don't want NFS capabilities run ```sudo apt-get remove nfs-common```.
 
 * Do not use LAMP
-* Optional to enable SSH access/highly recommended
+* SSH Access is optional, but highly recommended
 
 # Goals/Backstory for this script
 
