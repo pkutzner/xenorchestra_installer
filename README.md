@@ -2,9 +2,7 @@
 
 Xen-Orchestra (Community Edition) allows you to administer Citrix XenServer and XCP-NG as well as backup any VM's running on these systems. 
 
-Confirm your VM's IP Address before starting the script so you know where to login to. 
-
-The single line installer allows you to go from a bare-minimal installation of Ubuntu to fully operational. Run the following steps from a root shell. 
+The single line installation script allows you to go from a bare-minimal installation of Ubuntu or Debian to fully operational XOCE server. Run the following steps from a root shell. 
 
     sudo bash
     <password>
