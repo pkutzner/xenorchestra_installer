@@ -20,7 +20,7 @@ If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
 
 # Goals/Backstory for this script
 
-I've often am asked questions similar to "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal was to be the XCP-ng of XS. 
+I'm often asked "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal was to be the XCP-ng of XS. Which means I wanted a solution that offered as much as XOA offers, while using what is available freely and from open sources. Without restrictions. 
 
 That isn't to say that this installation script won't work on other distributions, please contribute and help us to spread XOCE to other platforms. 
 
