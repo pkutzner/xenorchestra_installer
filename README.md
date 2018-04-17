@@ -1,6 +1,6 @@
 # Xen-Orchestra (Community Edition) Installer
 
-Xen-Orchestra (Community Edition) allows you to administer Citrix XenServer and XCP-NG as well as backup any VM's running on these systems. 
+Xen-Orchestra (Community Edition) allows you to administer Citrix XenServer and XCP-ng as well as backup any VM's running on these systems. 
 
 The single line installation script allows you to go from a bare-minimal installation of Ubuntu or Debian to fully operational XOCE server. Run the following steps from a root shell. 
 
