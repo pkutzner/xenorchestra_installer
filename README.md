@@ -11,7 +11,7 @@ The single line installation script allows you to go from a bare-minimal install
     
 The default username and password are applied, admin@admin.net and admin for the password
     
-If you don't want NFS capabilities run "sudo apt-get remove nfs-common".
+If you don't want NFS capabilities run ```sudo apt-get remove nfs-common```.
 
 * Do not use LAMP
 * Optional to enable SSH access/highly recommended
