@@ -1,4 +1,4 @@
-#### Expected Behavior (or desired behavior if a feature request)
+#### Expected Behavior
 
 (what you expect to happen goes here)
 
