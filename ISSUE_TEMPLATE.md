@@ -1,12 +1,12 @@
 #### Expected Behavior
 
-(what you expect to happen goes here)
+<!-- what you expect to happen goes here -->
 
 -----
 
 #### Actual Behavior
 
-(what actually happens goes here)
+<!-- what actually happens goes here -->
 
 -----
 
@@ -30,5 +30,5 @@
 - Include what you've done so far in the installation, and if you got any error messages along the way.
 - Indicate whether or not you've manually edited any data directly.
 
-Please do not post an issue without answering the related questions above. If you have opened a different issue and already answered these questions, answer them again, once for every ticket. It will be next to impossible for us to help you.
+<!-- Please do not post an issue without answering the related questions above. If you have opened a different issue and already answered these questions, answer them again, once for every ticket. It will be next to impossible for us to help you. -->
 
