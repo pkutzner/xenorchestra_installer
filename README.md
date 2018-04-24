@@ -16,6 +16,12 @@ If you don't want NFS capabilities run ```sudo apt-get remove nfs-common```.
 * Do not use LAMP
 * SSH Access is optional, but highly recommended
 
+SSL Settings and Details
+
+To configure SSL with this installation script you'll want to look in the following path for the YAML configuration file, we name it ```.xo-server.yaml``` it can be found in ```/opt/xen-orchestra/packages/xo-server/```. 
+
+For details on how to configure this please review the documentation here: https://xen-orchestra.com/docs/configuration.html#https
+
 # Goals/Backstory for this script
 
 I'm often asked "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal was to be the XCP-ng of XS. Which means I wanted a solution that offered as much as XOA offers, while using what is available freely and from open sources. Without restrictions. 
