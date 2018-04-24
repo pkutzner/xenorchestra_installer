@@ -16,7 +16,7 @@ If you don't want NFS capabilities run ```sudo apt-get remove nfs-common```.
 * Do not use LAMP
 * SSH Access is optional, but highly recommended
 
-SSL Settings and Details
+## SSL Settings and Details
 
 To configure SSL with this installation script you'll want to look in the following path for the YAML configuration file, we name it ```.xo-server.yaml``` it can be found in ```/opt/xen-orchestra/packages/xo-server/```. 
 
