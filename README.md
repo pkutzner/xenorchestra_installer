@@ -16,6 +16,12 @@ If you don't want NFS capabilities run ```sudo apt-get remove nfs-common```.
 * Do not use LAMP
 * SSH Access is optional, but highly recommended
 
+## SSL and Reverse Proxies
+
+Please understand you are required to use a RP to setup SSL on XO (and XOCE). Some documentation on the process. https://xen-orchestra.com/docs/reverse_proxy.html
+
+The YAML file required can be found at ```/opt/xen-orchestra/packages/xo-server/.xo-server.yaml```
+
 # Goals/Backstory for this script
 
 I'm often asked "why can't this be run on CentOS or Fedora" to which my only reply is and has ever been: The goal was to be the XCP-ng of XS. Which means I wanted a solution that offered as much as XOA offers, while using what is available freely and from open sources. Without restrictions. 
