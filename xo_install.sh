@@ -4,7 +4,7 @@ xo_branch="master"
 xo_server="https://github.com/vatesfr/xen-orchestra"
 n_repo="https://raw.githubusercontent.com/visionmedia/n/master/bin/n"
 yarn_repo="deb https://dl.yarnpkg.com/debian/ stable main"
-node_source="https://deb.nodesource.com/setup_9.x"
+node_source="https://deb.nodesource.com/setup_8.x"
 yarn_gpg="https://dl.yarnpkg.com/debian/pubkey.gpg"
 n_location="/usr/local/bin/n"
 xo_server_dir="/opt/xen-orchestra"
@@ -23,7 +23,7 @@ sudo /usr/bin/apt-get install --yes nodejs yarn
 #Install n
 /usr/bin/curl -o $n_location $n_repo
 sudo /bin/chmod +x $n_location
-sudo /usr/local/bin/n stable
+sudo /usr/local/bin/n lts
 
 #Install XO dependencies
 sudo /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
