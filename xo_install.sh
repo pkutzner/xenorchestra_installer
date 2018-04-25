@@ -61,14 +61,6 @@ WantedBy=multi-user.target
 EOF
 fi
 
-# Horrible fix for Node v10
-#cd /opt/xen-orchestra
-#curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-#sudo n 8
-#sudo apt-get install -y nodejs
-#sudo yarn
-#sudo yarn build
-
 sudo /bin/chmod +x $systemd_service_dir/$xo_service
 sudo /bin/systemctl enable $xo_service
 sudo /bin/systemctl start $xo_service
