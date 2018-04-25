@@ -69,6 +69,7 @@ sudo /bin/systemctl start $xo_service
 
 cd /opt/xen-orchestra
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo n 8
 sudo apt-get install -y nodejs
 sudo yarn
 sudo yarn build
