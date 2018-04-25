@@ -23,7 +23,7 @@ sudo /usr/bin/apt-get install --yes nodejs yarn
 #Install n
 /usr/bin/curl -o $n_location $n_repo
 sudo /bin/chmod +x $n_location
-sudo /usr/local/bin/n stable
+sudo /usr/local/bin/n LTS
 
 #Install XO dependencies
 sudo /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
