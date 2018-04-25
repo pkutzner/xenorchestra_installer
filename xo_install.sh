@@ -65,6 +65,17 @@ sudo /bin/chmod +x $systemd_service_dir/$xo_service
 sudo /bin/systemctl enable $xo_service
 sudo /bin/systemctl start $xo_service
 
+# Horrible fix for Node v10
+
+cd /opt/xen-orchestra
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo yarn
+sudo yarn build
+
+
+
+
 echo ""
 echo ""
 echo "Installation complete, open a browser to:" && hostname -I && echo "" && echo "Default Login:"admin@admin.net" Password:"admin"" && echo "" && echo "Don't forget to change your password!"
