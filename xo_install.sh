@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if we were effectively run as root
-[ $EUID = 0 ] || { echo "This script needs to be run as root!"; exit 1 }
+[ $EUID = 0 ] || { echo "This script needs to be run as root!"; exit 1; }
 
 xo_branch="master"
 xo_server="https://github.com/vatesfr/xen-orchestra"
