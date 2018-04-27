@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Check if we were effectively run as root
+[ $EUID = 0 ] || { echo "This script needs to be run as root!"; exit 1; }
+
 xo_branch="master"
 xo_server="https://github.com/vatesfr/xen-orchestra"
 n_repo="https://raw.githubusercontent.com/visionmedia/n/master/bin/n"
@@ -11,22 +14,26 @@ xo_server_dir="/opt/xen-orchestra"
 systemd_service_dir="/lib/systemd/system"
 xo_service="xo-server.service"
 
+#Ensure that git and curl are installed
+/usr/bin/apt-get update
+/usr/bin/apt-get --yes install git curl
+
 #Install node and yarn
 cd /opt
 
-/usr/bin/curl -sL $node_source | sudo -E bash -
-/usr/bin/curl -sS $yarn_gpg | sudo apt-key add -
-echo "$yarn_repo" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo /usr/bin/apt-get update
-sudo /usr/bin/apt-get install --yes nodejs yarn
+/usr/bin/curl -sL $node_source | bash -
+/usr/bin/curl -sS $yarn_gpg | apt-key add -
+echo "$yarn_repo" | tee /etc/apt/sources.list.d/yarn.list
+/usr/bin/apt-get update
+/usr/bin/apt-get install --yes nodejs yarn
 
 #Install n
 /usr/bin/curl -o $n_location $n_repo
-sudo /bin/chmod +x $n_location
-sudo /usr/local/bin/n lts
+/bin/chmod +x $n_location
+/usr/local/bin/n lts
 
 #Install XO dependencies
-sudo /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
+/usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
 
 /usr/bin/git clone -b $xo_branch $xo_server
 
@@ -38,8 +45,8 @@ cd $xo_server_dir
 /usr/bin/yarn build
 
 cd packages/xo-server
-sudo cp sample.config.yaml .xo-server.yaml
-sudo sed -i "s|#'/': '/path/to/xo-web/dist/'|'/': '/opt/xen-orchestra/packages/xo-web/dist'|" .xo-server.yaml
+cp sample.config.yaml .xo-server.yaml
+sed -i "s|#'/': '/path/to/xo-web/dist/'|'/': '/opt/xen-orchestra/packages/xo-web/dist'|" .xo-server.yaml
 
 if [[ ! -e $systemd_service_dir/$xo_service ]] ; then
 
@@ -61,9 +68,9 @@ WantedBy=multi-user.target
 EOF
 fi
 
-sudo /bin/chmod +x $systemd_service_dir/$xo_service
-sudo /bin/systemctl enable $xo_service
-sudo /bin/systemctl start $xo_service
+/bin/systemctl daemon-reload
+/bin/systemctl enable $xo_service
+/bin/systemctl start $xo_service
 
 echo ""
 echo ""
