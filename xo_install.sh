@@ -3,6 +3,10 @@
 # Check if we were effectively run as root
 [ $EUID = 0 ] || { echo "This script needs to be run as root!"; exit 1; }
 
+#Check for 1GB Memory
+totalk=$(awk '/^MemTotal:/{print $2}' /proc/meminfo)
+if [ "$totalk" -lt "1000000" ]; then echo "XOCE Requires at least 1GB Memory!"; exit 1; fi 
+
 xo_branch="master"
 xo_server="https://github.com/vatesfr/xen-orchestra"
 n_repo="https://raw.githubusercontent.com/visionmedia/n/master/bin/n"
