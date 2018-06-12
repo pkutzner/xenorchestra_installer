@@ -5,9 +5,7 @@
 
 #Check for 1GB Memory
 totalk=$(awk '/^MemTotal:/{print $2}' /proc/meminfo)
-if [ $totalk < "1000000" ]; then
-echo "XOCE Requires at least 1GB Memory!"
-fi
+if [ "$totalk" -lt "1000000" ]; then echo "XOCE Requires at least 1GB Memory!"; exit 1; fi 
 
 xo_branch="master"
 xo_server="https://github.com/vatesfr/xen-orchestra"
