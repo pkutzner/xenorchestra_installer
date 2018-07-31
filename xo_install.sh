@@ -2,8 +2,8 @@
 
 #Repository add - confirm required repoistor(ies) are enabled and active, update and upgrade no matter what
 add-apt-repository multiverse
-sudo update
-sudo upgrade
+sudo apt update
+sudo apt upgrade
 
 # Check if we were effectively run as root
 [ $EUID = 0 ] || { echo "This script needs to be run as root!"; exit 1; }
