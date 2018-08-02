@@ -40,7 +40,7 @@ echo "$yarn_repo" | tee /etc/apt/sources.list.d/yarn.list
 /usr/local/bin/n lts
 
 #Install XO dependencies
-/usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
+/usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common || echo "Aborting due to failure to install dependencies. Please see troubleshooting guide." && exit
 
 /usr/bin/git clone -b $xo_branch $xo_server
 
