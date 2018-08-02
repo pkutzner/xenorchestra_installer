@@ -32,3 +32,16 @@ This will check and continually update the last 50 log files for your XOCE insta
 
        journalctl -u xo-server -f -n 50
 
+# Required Dependencies 
+
+Your system must be able to install the following list of dependencies, usually this is automatic but some distributions might not have the required repositories. Plese confirm you can install these before creating a ticket. 
+
+* build-essential 
+* redis-server 
+* libpng-dev 
+* git 
+* python-minimal 
+* libvhdi-utils 
+* nfs-common
+
+These dependencies (on Ubuntu) are available from the ```multiverse``` and ```universe``` repositories. 
