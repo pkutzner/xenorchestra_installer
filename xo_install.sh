@@ -58,6 +58,8 @@ cd packages/xo-server
 cp sample.config.yaml .xo-server.yaml
 sed -i "s|#'/': '/path/to/xo-web/dist/'|'/': '/opt/xen-orchestra/packages/xo-web/dist'|" .xo-server.yaml
 
+mkdir -p /usr/local/lib/node_modules/
+
 # symlink all plugins
 for source in =$(ls -d /opt/xen-orchestra/packages/xo-server-*); do
     ln -s "$source" /usr/local/lib/node_modules/
