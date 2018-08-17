@@ -39,6 +39,9 @@ echo "$yarn_repo" | tee /etc/apt/sources.list.d/yarn.list
 /bin/chmod +x $n_location
 /usr/local/bin/n lts
 
+#Symbolic Link
+ln -s /usr/bin/node /usr/local/bin/node
+
 #Install XO dependencies
 /usr/bin/apt-get install --yes build-essential redis-server libpng-dev git python-minimal libvhdi-utils nfs-common
 
