@@ -37,7 +37,6 @@ echo "$yarn_repo" | tee /etc/apt/sources.list.d/yarn.list
 # Install n
 /usr/bin/curl -o $n_location $n_repo
 /bin/chmod +x $n_location
-/usr/local/bin/n lts
 
 # Symlink node directories
 ln -s /usr/bin/node /usr/local/bin/node
